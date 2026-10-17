@@ -1,0 +1,2 @@
+# Gitignored files Orca copies into each new worktree. Literal paths only.
+.env.local

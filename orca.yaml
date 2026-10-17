@@ -1,0 +1,6 @@
+# Orca repository config (https://github.com/stablyai/orca).
+# Each worktree runs its own pnpm install: sharing node_modules through
+# worktree.sharedDirectories would resolve @bizos/* to the primary checkout.
+scripts:
+  setup: pnpm install --frozen-lockfile
+setupAgentStartupPolicy: wait-for-setup
