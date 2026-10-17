@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+*.log
+
+# Environment and secrets (company data never lives in this repo: docs/adr/0002)
+.env
+.env.*
+!.env.example
+
+# Agent and worktree state
+.worktrees/
+.claude/settings.local.json
+.claude/worktrees/
+
+# OS
+.DS_Store
